@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PopUp</title>
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <a data-fancybox data-src="#modal" href="javascript:;" class="push">Push</a>
+
+  <div id="modal" class="verify">
+    <div class="verify__wrapper">
+      <h2 class="verify__title">
+        First let us get some basic information in order to proceed
+      </h2>
+      <form class="verify__form" action="">
+        <div class="verify__create create">
+          <h4 class="create__title title">Create your account now</h4>
+          <div class="create__block">
+            <div class="create__box">
+              <label class="create__label" for="name">Full name</label>
+              <input class="create__info create__info--name" type="text" name="name" id="name"
+                placeholder="your full name">
+            </div>
+            <div class="create__box">
+              <label class="create__label" for="email">Email:</label>
+              <input class="create__info create__info--email" type="email" name="email" id="email"
+                placeholder="your email">
+            </div>
+            <div class="create__box">
+              <label class="create__label" for="mobile">Mobile:</label>
+              <input class="create__info create__info--tel" type="tel" name="mobile" id="mobile"
+                placeholder="your phone">
+            </div>
+          </div>
+        </div>
+
+        <div class="verify__select select">
+          <h4 class="select__title title">Please select your business</h4>
+          <div class="select__block">
+
+            <div class="select__box select__box--business">
+              <input class="select__info" type="checkbox" name="business" id="business">
+              <label class="select__text" for="business">Small Business
+                <svg display="none">
+                  <symbol id="check" viewBox="0 0 512 512">
+                    <path
+                      d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                    </path>
+                  </symbol>
+                </svg>
+                <svg class="select__icon">
+                  <use href="#check"></use>
+                </svg>
+                <div class="select__bg"></div>
+              </label>
+            </div>
+
+            <div class="select__box select__box--b2b">
+              <input class="select__info" type="checkbox" name="b2b" id="b2b">
+              <label class="select__text" for="b2b">B2B
+                <svg display="none">
+                  <symbol id="check" viewBox="0 0 512 512">
+                    <path
+                      d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                    </path>
+                  </symbol>
+                </svg>
+                <svg class="select__icon">
+                  <use href="#check"></use>
+                </svg>
+                <div class="select__bg"></div>
+              </label>
+            </div>
+
+            <div class="select__box select__box--store">
+              <input class="select__info" type="checkbox" name="store" id="store">
+              <label class="select__text" for="store">Retail Stores
+                <svg display="none">
+                  <symbol id="check" viewBox="0 0 512 512">
+                    <path
+                      d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                    </path>
+                  </symbol>
+                </svg>
+                <svg class="select__icon">
+                  <use href="#check"></use>
+                </svg>
+                <div class="select__bg"></div>
+              </label>
+            </div>
+
+            <div class="select__box select__box--profit">
+              <input class="select__info" type="checkbox" name="profit" id="profit">
+              <label class="select__text" for="profit">Nonprofits
+                <svg display="none">
+                  <symbol id="check" viewBox="0 0 512 512">
+                    <path
+                      d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                    </path>
+                  </symbol>
+                </svg>
+                <svg class="select__icon">
+                  <use href="#check"></use>
+                </svg>
+                <div class="select__bg"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <button class="verify__btn" type="submit">Verify & Continue</button>
+
+      </form>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
